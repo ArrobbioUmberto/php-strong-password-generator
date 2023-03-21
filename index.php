@@ -1,7 +1,8 @@
 <?php
-
+session_start();
 
 include __DIR__ . '/functions.php';
+
 
 ?>
 
@@ -31,12 +32,9 @@ include __DIR__ . '/functions.php';
             <span>Lunghezza della parola </span>
             <input type="number" placeholder="indice la lunghezza della parola" name="lenght">
             <button type="submit" action="" method="GET" class="btn btn-primary">Invia</button>
-            <button type="button" class="btn btn-secondary">Annulla</button>
         </form>
     </div>
-    <div>
-        <h1>La tua password: <?php echo $password ?></h1>
-    </div>
+
 
 </body>
 
