@@ -1,17 +1,7 @@
 <?php
 
-var_dump($_GET);
 
-$lenght = $_GET['lenght'];
-$password = '';
-$word = 'abcdefghijlmnopqrstuvwxyzABCDEFGHIJLMNORSTUVWXYZ0123456789!#$%&*-+/';
-$single_word = str_split($word);
-shuffle($single_word);
-
-for ($i = 0; $i < $lenght; $i++) {
-    $password .= $single_word[array_rand($single_word)];
-}
-
+include __DIR__ . '/functions.php';
 
 ?>
 
@@ -40,7 +30,7 @@ for ($i = 0; $i < $lenght; $i++) {
         <form action="" method="GET">
             <span>Lunghezza della parola </span>
             <input type="number" placeholder="indice la lunghezza della parola" name="lenght">
-            <button type="submit" method="GET" class="btn btn-primary">Invia</button>
+            <button type="submit" action="" method="GET" class="btn btn-primary">Invia</button>
             <button type="button" class="btn btn-secondary">Annulla</button>
         </form>
     </div>
