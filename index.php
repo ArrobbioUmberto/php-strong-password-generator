@@ -1,3 +1,18 @@
+<?php
+
+var_dump($_GET);
+
+$lenght = $_GET['lenght'];
+
+?>
+
+
+
+
+
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -15,7 +30,9 @@
     <div class="container py-5">
         <form action="" method="GET">
             <span>Lunghezza della parola </span>
-            <input type="number" placeholder="indice la lunghezza della parola">
+            <input type="number" placeholder="indice la lunghezza della parola" name="lenght">
+            <button type="button" class="btn btn-primary">Invia</button>
+            <button type="button" class="btn btn-secondary">Annulla</button>
         </form>
     </div>
 
