@@ -13,7 +13,9 @@ var_dump($lenght);
 
 
 for ($i = 0; $i < $lenght; $i++) {
-    $password .= $single_word[array_rand($single_word)];
-    $_SESSION["main_password"] = $password;
-    header('Location: ./password.php');
+    if ($lenght > 0 && !is_nan($lenght)) {
+        $password .= $single_word[array_rand($single_word)];
+        $_SESSION["main_password"] = $password;
+        header('Location: ./password.php');
+    }
 }
