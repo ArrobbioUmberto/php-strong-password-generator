@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-include __DIR__ . '/functions.php';
+// include __DIR__ . '/functions.php';
 
 ?>
 
@@ -21,8 +21,8 @@ include __DIR__ . '/functions.php';
 
 <body>
     <div class="container">
-        <div class="container">
-            <h1>La tua password: <?php echo $_SESSION['main_password']; ?></h1>
+        <div class="container py-5">
+            <h1>La tua password: <?php echo $_SESSION["main_password"]; ?></h1>
         </div>
 
     </div>
