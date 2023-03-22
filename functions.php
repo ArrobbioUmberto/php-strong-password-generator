@@ -2,7 +2,9 @@
 
 // var_dump($password);
 
-$lenght = $_GET['lenght'];
+$lenght = isset($_GET['lenght']) ? $_GET['lenght'] : null;
+
+
 $password = '';
 $word = 'abcdefghijlmnopqrstuvwxyzABCDEFGHIJLMNORSTUVWXYZ0123456789!#$%&*-+/';
 $single_word = str_split($word);
